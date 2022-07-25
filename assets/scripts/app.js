@@ -2,19 +2,19 @@ const Portfolio = function() {
 	function makeWords() {
 		var words = [
 			{
-				text: "django",
+				text: "laravel",
 				weight: 15
 			}, {
-				text: "css3",
+				text: "django",
 				weight: 8
 			}, {
 				text: "c",
 				weight: 14
 			}, {
-				text: "flask",
+				text: "css3",
 				weight: 7
 			}, {
-				text: "sql",
+				text: "mySQL",
 				weight: 7
 			}, {
 				text: "javascript",
@@ -23,7 +23,7 @@ const Portfolio = function() {
 				text: "html",
 				weight: 9
 			}, {
-				text: "maths",
+				text: "php",
 				weight: 12.3
 			}, {
 				text: "data structures",
