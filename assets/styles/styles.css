@@ -1,50 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700");
 
 /*********** Global Styles********/
 
-body, html {
-		background-color: #E3E3E3;
+body,
+html {
+	background-color: #e3e3e3;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: "Lato", sans-serif !important;
 	font-weight: 900 !important;
 }
 
 .wrapper {
-		background: #E3E3E3;
+	background: #e3e3e3;
 }
 
 .img-circle {
-		border-radius: 20%;
+	border-radius: 20%;
 }
 
 .my-button {
-		font-size: 1em;
-		line-height: normal;
-		text-transform: uppercase;
-		font-family: 'Lato', sans-serif;
-		font-weight: 900;
-		-webkit-transition: all .3s ease-in-out;
-		transition: all .3s ease-in-out, color 0.2s 0.3s;
-		letter-spacing: 0;
-		border-radius: 45px;
-		height: auto;
-		padding: .8em 2.1em;
+	font-size: 1em;
+	line-height: normal;
+	text-transform: uppercase;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition:
+		all 0.3s ease-in-out,
+		color 0.2s 0.3s;
+	letter-spacing: 0;
+	border-radius: 45px;
+	height: auto;
+	padding: 0.8em 2.1em;
 }
 
 .my-button:hover {
 	cursor: pointer;
-	padding: .8em 2.7em;
+	padding: 0.8em 2.7em;
 }
 
 .my-button:active,
 .my-button:focus,
 .my-button.active {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 /*#my-modal {
@@ -61,67 +69,68 @@ h1, h2, h3, h4, h5, h6 {
 
 /**********************************/
 
-
 /*** thin bar ***/
 
 .thin-bar {
-		border-bottom: 5px solid #F33F12;
+	border-bottom: 5px solid #f33f12;
 }
-
 
 /*** About Section ***/
 
 #about {
-		margin-top: 10em;
-		border: 1px solid #eee;
-		background-color: white;
-		padding-bottom: 1em;
+	margin-top: 10em;
+	border: 1px solid #eee;
+	background-color: white;
+	padding-bottom: 1em;
 }
 
 #about img {
-		max-width: 15em;
-		position: relative;
-		bottom: 7.5em;
+	max-width: 15em;
+	position: relative;
+	bottom: 7.5em;
 }
 
 #about .details {
-		margin-top: -2em;
+	margin-top: -2em;
 }
 
 #about h2 {
-		color: #646464;
-		font-size: 3.8em;
-		padding-bottom: 1em;
+	color: #646464;
+	font-size: 3.8em;
+	padding-bottom: 1em;
 }
 
 #about span {
-		font-weight: 300;
-		font-size: .7em;
+	font-weight: 300;
+	font-size: 0.7em;
 }
 
 #about h5 {
-		color: #8A8A8B;
+	color: #8a8a8b;
 }
 
 #about p {
-		margin-top: 1em;
-		color: #646464;
-		font-family: "roboto";
-		font-weight: 300;
+	margin-top: 1em;
+	color: #646464;
+	font-family: "roboto";
+	font-weight: 300;
 }
 
 .cta .cta-button {
-		color: #cc4b37;
-		text-transform: uppercase;
-		border: 2px solid rgba(255, 103, 68, 0.91);
-		border-radius: 50px;
-		background: white;
+	color: #cc4b37;
+	text-transform: uppercase;
+	border: 2px solid rgba(255, 103, 68, 0.91);
+	border-radius: 50px;
+	background: white;
 }
 
-.cta .cta-button:hover, .cta .cta-button:focus {
-		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
-		background-color: rgba(255, 103, 68, 0.91);
-		color: white;
+.cta .cta-button:hover,
+.cta .cta-button:focus {
+	box-shadow:
+		0 5px 11px 0 rgba(0, 0, 0, 0.18),
+		0 4px 14px 1px rgba(0, 0, 0, 0.15);
+	background-color: rgba(255, 103, 68, 0.91);
+	color: white;
 }
 
 #about i {
@@ -146,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #experience h2 {
 	color: #fff;
-	margin-bottom: .7em;
+	margin-bottom: 0.7em;
 }
 
 #experience .tag-line {
@@ -164,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .experience-topics p {
-	color: #ACAEB2;
+	color: #acaeb2;
 	font-family: "Maven pro", sans-serif;
 	/*font-weight: 500;*/
 }
@@ -176,7 +185,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 }
 
-ol, ul {
+ol,
+ul {
 	margin-left: 0px !important;
 }
 /*** work ***/
@@ -186,10 +196,9 @@ ol, ul {
 }
 
 #work h2 {
-	color: #FF6945;
-	margin-bottom: .7em;
+	color: #ff6945;
+	margin-bottom: 0.7em;
 }
-
 
 #work .tag-line {
 	color: #767779;
@@ -201,9 +210,22 @@ ol, ul {
 	margin-bottom: 5.5em;
 }
 
+#work .project-badge {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 5px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	background: #2d89ef;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
 .image {
 	border-style: ridge;
-    border-width: 2px;
+	border-width: 2px;
 }
 
 .details h3 {
@@ -211,7 +233,7 @@ ol, ul {
 	text-transform: uppercase;
 }
 
-.details .platform{
+.details .platform {
 	font-size: 0.8em;
 	text-transform: uppercase;
 	margin: 2em 0 -0.1em;
@@ -233,111 +255,155 @@ ol, ul {
 	margin-bottom: 1.8em;
 }
 
-.details a, .details a:link, .details a:active{
-		color: rgba(255, 103, 68, 0.91);
-		border: 2px solid rgba(255, 103, 68, 0.91) !important;
-		background-color: #fff;
+.details a,
+.details a:link,
+.details a:active {
+	color: rgba(255, 103, 68, 0.91);
+	border: 2px solid rgba(255, 103, 68, 0.91) !important;
+	background-color: #fff;
 }
 
-.details a:hover, .details a:focus {
-		/*box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);*/
-		background-color: rgba(255, 103, 68, 0.91) !important;
-		color: #fff;
+.details a:hover,
+.details a:focus {
+	/*box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);*/
+	background-color: rgba(255, 103, 68, 0.91) !important;
+	color: #fff;
 }
 
-/*** teaching ***/
-#teaching {
-	padding: 6em 4em 3em;
+/*** education ***/
+#education {
+	padding: 80px 0;
+	background: #fafafa;
 }
 
-#teaching h2 {
-	color: #595959;
+.education-card {
+	background: #fff;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+	margin-bottom: 30px;
+	transition: 0.3s ease;
+	height: 100%;
 }
 
-#teaching .tag-line {
-	color: #848282;
-	font-size: 1.4em;
+.education-card:hover {
+	transform: translateY(-5px);
 }
 
-#teaching .teaching-domains {
-	height: 500px;
-	width: auto;
-	margin-top: -4em;
+.education-icon {
+	font-size: 2rem;
+	margin-bottom: 15px;
 }
 
+.education-card h3 {
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+}
 
+.institution {
+	font-weight: 600;
+	color: #666;
+	margin-bottom: 15px;
+}
 
+.skills-cloud-card {
+	margin-top: 40px;
+	background: #fff;
+	border-radius: 12px;
+	padding: 30px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.education-domains {
+	height: 300px;
+}
 
 /*** Footer Call-to-action ***/
 #footer-cta {
-	background-color: rgba(255, 103, 68, 0.91);
-	padding: 6em 4em 5.6em;
+    padding: 60px 20px;
+    background: linear-gradient(
+        135deg,
+        #1f2937,
+        #111827
+    );
+    color: #fff;
+}
+
+.cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.availability-badge {
+    display: inline-block;
+    background: rgba(255,255,255,.15);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
 }
 
 #footer-cta h2 {
-	color: white;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
-#footer-cta p {
-	color: #fff;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	font-size: 1.2em;
+.cta-description {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,.85);
 }
 
-#startButtonDiv {
-	margin-top: 3em;
+.secondary-button {
+    margin-left: 15px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
-#footer-cta a {
-	border: 2px solid #fff;
-	border-radius: 45px;
-	color: #fff;
-}
-
-#footer-cta a:hover {
-	background: #fff;
-	color: rgba(255, 103, 68, 0.91);
-	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+.secondary-button:hover {
+    background: #fff;
+    color: #111827;
 }
 
 /*** footer starts ***/
-
 #footer {
-	padding: 5em 4em 2em;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-#footer #logo {
-	background-color: rgba(255, 103, 68, 0.91);
-	border-radius: 50%;
-	color: #fff;
-	padding: .4em;
-	font-family: "Maven pro", sans-serif;
-	font-size: 1.6em;
-	font-weight: 500;
-	display: inline;
+#logo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-#footer #copyright {
-	margin-top: 1.6em;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	color: #7d7d7d;
+.footer-tagline {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+#copyright {
+    color: #999;
+    font-size: 0.9rem;
 }

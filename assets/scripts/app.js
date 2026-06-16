@@ -1,48 +1,32 @@
-const Portfolio = function() {
+const Portfolio = (function () {
 	function makeWords() {
 		var words = [
-			{
-				text: "laravel",
-				weight: 15
-			}, {
-				text: "django",
-				weight: 8
-			}, {
-				text: "c",
-				weight: 14
-			}, {
-				text: "css3",
-				weight: 7
-			}, {
-				text: "mySQL",
-				weight: 7
-			}, {
-				text: "javascript",
-				weight: 10
-			}, {
-				text: "html",
-				weight: 9
-			}, {
-				text: "php",
-				weight: 12.3
-			}, {
-				text: "data structures",
-				weight: 4
-			}, {
-				text: "algorithms",
-				weight: 8
-			}
+			{ text: "Laravel", weight: 15 },
+			{ text: "PHP", weight: 14 },
+			{ text: "React", weight: 13 },
+			{ text: "JavaScript", weight: 13 },
+			{ text: "REST APIs", weight: 12 },
+			{ text: "MySQL", weight: 12 },
+			{ text: "Git", weight: 10 },
+			{ text: "Bootstrap", weight: 9 },
+			{ text: "Tailwind CSS", weight: 9 },
+			{ text: "Problem Solving", weight: 8 },
+			{ text: "Responsive Design", weight: 8 },
+			{ text: "Database Design", weight: 7 },
+			{ text: "API Integration", weight: 7 },
+			{ text: "Agile", weight: 6 },
+			{ text: "Jira", weight: 6 },
 		];
 		return words;
 	}
 
 	function makeWordCloud(words) {
-		$('.teaching-domains').jQCloud(words, {delay: 120});
+		$(".education-domains").jQCloud(words, { delay: 120 });
 	}
 
 	function displayWordCloud() {
 		var count = 1;
-		$(window).on('scroll', function() {
+		$(window).on("scroll", function () {
 			var y_scroll_pos = window.pageYOffset;
 			var scroll_pos_test = 2700; // set to whatever you want it to be
 			var words = makeWords();
@@ -60,28 +44,34 @@ const Portfolio = function() {
 	function typeAnimation() {
 		Typed.new("#writing-text", {
 			strings: [
-				"am a Full-Stack Developer.", "love to code.", "also like to teach programming.", "am a problem solver.", " am also a self learner.", "am a Developer"
+				"am a Full-Stack Developer.",
+				"build scalable web applications.",
+				"specialize in Laravel and PHP.",
+				"create modern user experiences.",
+				"develop secure REST APIs.",
+				"turn ideas into working products.",
 			],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,
 			// typing speed
 			typeSpeed: 1,
-			contentType: 'text',
-			callback: function() {
-				$("#writing-text").css({"color": "#fff", "background-color": "#C8412B"});
+			contentType: "text",
+			callback: function () {
+				$("#writing-text").css({
+					color: "#fff",
+					"background-color": "#C8412B",
+				});
 			},
-			preStringTyped: function() {},
-			onStringTyped: function() {}
+			preStringTyped: function () {},
+			onStringTyped: function () {},
 		});
 	}
 
 	return {
 		displayWordCloud: displayWordCloud,
-		typeAnimation: typeAnimation
-	}
-
-}();
-
+		typeAnimation: typeAnimation,
+	};
+})();
 
 Portfolio.displayWordCloud();
 Portfolio.typeAnimation();
