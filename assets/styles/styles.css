@@ -320,90 +320,98 @@ ul {
 
 /*** Footer Call-to-action ***/
 #footer-cta {
-    padding: 60px 20px;
-    background: linear-gradient(
-        135deg,
-        #1f2937,
-        #111827
-    );
-    color: #fff;
+	padding: 60px 20px;
+	background: linear-gradient(135deg, #1f2937, #111827);
+	color: #fff;
 }
 
 .cta-container {
-    max-width: 900px;
-    margin: 0 auto;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 .availability-badge {
-    display: inline-block;
-    background: rgba(255,255,255,.15);
-    padding: 8px 16px;
-    border-radius: 30px;
-    margin-bottom: 25px;
-    font-weight: 600;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.15);
+	padding: 8px 16px;
+	border-radius: 30px;
+	margin-bottom: 25px;
+	font-weight: 600;
 }
 
 #footer-cta h2 {
-    color: #fff;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: 700;
+	color: #fff;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	font-weight: 700;
 }
 
 .cta-description {
-    max-width: 700px;
-    margin: 0 auto 40px;
-    line-height: 1.8;
-    font-size: 1.1rem;
-    color: rgba(255,255,255,.85);
+	max-width: 700px;
+	margin: 0 auto 40px;
+	line-height: 1.8;
+	font-size: 1.1rem;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.cta-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+	.cta-buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cta-buttons a {
+		width: 100%;
+		max-width: 280px;
+	}
 }
 
 .secondary-button {
-    margin-left: 15px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
+	margin-left: 15px;
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
 }
 
 .secondary-button:hover {
-    background: #fff;
-    color: #111827;
+	background: #fff;
+	color: #111827;
 }
 
 /*** footer starts ***/
 #footer {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#logo {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+	padding: 50px 20px;
+	text-align: center;
 }
 
 .footer-tagline {
-    color: #777;
-    margin-bottom: 20px;
+	color: #777;
+	margin-bottom: 20px;
 }
 
 .footer-links {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .footer-links a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
+	margin: 0 15px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: 0.3s ease;
 }
 
 .footer-links a:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 #copyright {
-    color: #999;
-    font-size: 0.9rem;
+	color: #999;
+	font-size: 0.9rem;
 }
